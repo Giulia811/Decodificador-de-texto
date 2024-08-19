@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./img/darkmode.png" alt="Mode" class="imagem__mode">
+        <button class="tema" onclick="toggleTema()">Alternar Tema</button>
+    </header>
+    <main class="conteudo">
+        <section class="conteudo__criptografar">
+            <textarea class="conteudo__escrito" cols="41" rows="4" placeholder="Digite um texto"></textarea>
+            <div class="aviso">
+                <img src="./img/exclamation__white.png" alt="Exclamação" class="aviso__imagem">
+                <span class="aviso__texto">Apenas letras minúsculas e sem acento.</span>
+            </div>
+            <div class="botoes">
+                <button onclick="botaoCriptografar()" class="botao__criptografar">Criptografar</button>
+                <button onclick="botaoDescriptografar()" class="botao__descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <section class="caixa__conteudo__pronto">
+            <div class="caixa__conteudo">
+                <textarea cols="20" rows="10" class="conteudo__pronto" readonly></textarea>
+                <h2 class="caixa__conteudo__titulo">Nenhum texto encontrado</h2>
+                <p class="caixa__conteudo__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <button onclick="botaoCopiar()" class="botao__copiar">Copiar</button>
+        </section>          
+    </main>
+    <footer class="rodape">
+        <h2 class="desenvolvido__por">Desenvolvido por Giulia</h2>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

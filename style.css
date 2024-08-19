@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Permanent+Marker&display=swap');
+
+:root {
+    --background-color: rgb(23, 21, 21);
+    --text-color: white;
+    --border-color: white;
+    --box-background-color: black;
+    --background-image: url(./img/fundo__descriptografador.png);
+    --tema-gradient-1:#0040a1;
+    --tema-gradient-2:#00f2ff;
+    --tema-sombra:rgba(6, 38, 136, 0.67);
+    --tema-gradient-transition-1:#f9d664;
+    --tema-gradient-transition-2:#c47c00;
+    --tema-sombra-transition:rgba(182, 105, 3, 0.816);
+    --botao-descriptografar-gradient-1: #0fcfec; 
+    --botao-descriptografar-gradient-2: #041125; 
+    --botoes-gradient-1: #0fcfec; 
+    --botoes-gradient-2: #112899; 
+    --botao-sombra: rgba(255, 255, 255, 0.75);
+    --background-color-rodape: #012263;
+}
+
+.lightmode {
+    --background-color: rgb(241, 205, 173);
+    --text-color: black;
+    --border-color: black;
+    --box-background-color: #de7300;
+    --background-image: url(./img/fundo_\ lightmode.png);
+    --tema-gradient-1:#f9d664;
+    --tema-gradient-2:#c47c00;
+    --tema-sombra:rgba(182, 105, 3, 0.816);
+    --tema-gradient-transition-1:#0040a1;
+    --tema-gradient-transition-2:#00f2ff;
+    --tema-sombra--transition:rgba(6, 38, 136, 0.67);
+    --botao-descriptografar-gradient-1:#f1ab60;
+    --botao-descriptografar-gradient-2:#fcfa76; 
+    --botoes-gradient-1: #cf6802; 
+    --botoes-gradient-2: #c2a800; 
+    --botao-sombra: rgba(255, 165, 0, 0.75);
+    --background-color-rodape: #de7300;
+}
+
+.cabecalho{
+    padding: 2% 0% 1% 3%;
+    display: flex;
+}
+
+.imagem__mode {
+    width:5%;
+    height:5%;
+}
+
+.tema {
+    padding: 1% 1.5%;
+    box-sizing: border-box;  
+    font-family: "Permanent Marker", cursive;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    background-size: 300% 100%;
+    border-radius: 16px;
+    background-image: linear-gradient(to right, var(--tema-gradient-1), var(--tema-gradient-2)); 
+    box-shadow: 0 4px 15px 0 var(--tema-sombra); 
+    transition: all .4s ease-in-out;
+}
+
+.tema:hover {
+    background-position: 100% 0;
+    background-image: linear-gradient(to right,var(--tema-gradient-transition-1), var(--tema-gradient-transition-2)); 
+    box-shadow: 0 4px 15px 0 var(--tema-sombra-transition); 
+    transition: all .4s ease-in-out;
+}
+
+body{
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+.conteudo {
+    padding: 3% 5% 1% 2%;
+    display: flex;
+    gap: 10%;
+}
+
+.conteudo__escrito {
+    box-sizing: border-box;
+    display: flex;
+    border: none;
+    height: 100%;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+    text-transform: lowercase;
+    resize: none;
+}
+
+.conteudo__escrito:focus {
+    outline: none;
+    border: none;
+}
+
+.aviso{
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+
+.aviso__imagem {
+    width: 2%;
+}
+
+.aviso__texto {
+    color: var(--text-color);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: default;
+}
+
+.caixa__conteudo__pronto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    width: 20%;
+    border: 2px solid var(--border-color);
+    background-color: var(--box-background-color);
+    border-radius: 16px;
+}
+
+.caixa__conteudo {
+    padding: 20% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--text-color);
+    cursor: default;
+}
+
+.caixa__conteudo__titulo {
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 200;
+}
+
+.caixa__conteudo__paragrafo {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.conteudo__pronto {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--box-background-color);
+    border: none;
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    resize: none;
+    cursor: default;
+}
+
+.conteudo__pronto:focus {
+    outline: none;
+    border: none; 
+}
+
+.conteudo__criptografar{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes{
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.botao__criptografar {
+    padding: 2% 7%;
+    box-sizing: border-box;  
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    background-size: 300% 100%;
+    border-radius: 16px;
+    background-image: linear-gradient(to right, var(--botoes-gradient-1), var(--botoes-gradient-2)); 
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75); 
+    transition: all .4s ease-in-out;
+}
+
+.botao__criptografar:hover {
+    background-position: 100% 0;
+    background-image: linear-gradient(to right, var(--botoes-gradient-2), var(--botoes-gradient-1)); 
+    box-shadow: 0 4px 15px 0 rgba(204, 202, 212, 0.75); 
+    transition: all .4s ease-in-out;
+}
+
+.botao__descriptografar {
+    padding: 2% 7%;
+    box-sizing: border-box;  
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    background-size: 300% 100%;
+    border-radius: 16px;
+    background-image: linear-gradient(to right, var(--botao-descriptografar-gradient-1), var(--botao-descriptografar-gradient-2)); 
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75); 
+    transition: all .4s ease-in-out;
+}
+
+
+.botao__descriptografar:hover {
+    background-position: 100% 0;
+    background-image: linear-gradient(to right, var(--botao-descriptografar-gradient-2), var(--botao-descriptografar-gradient-1)); 
+    box-shadow: 0 4px 15px 0 rgba(204, 202, 212, 0.75); 
+    transition: all .4s ease-in-out;
+}
+
+.botao__copiar {
+    width: 200px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 10%;
+    padding: 2% 5%;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, var(--botoes-gradient-1), var(--botoes-gradient-2)); 
+    box-shadow: 0 4px 15px 0 var(--botao-sombra); 
+    transition: all .4s ease-in-out;
+}
+
+.botao__copiar:hover {
+    background-position: 100% 0;
+    background-image: linear-gradient(to right, var(--botoes-gradient-2), var(--botoes-gradient-1)); 
+    box-shadow: 0 4px 15px 0 var(--botao-sombra); 
+    transition: all .4s ease-in-out;
+}
+
+.rodape { 
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color-rodape);
+    color: var(--text-color);
+    font-family: "Dancing Script", cursive;
+}
+
+@media (max-width: 1200px) {
+    .conteudo {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        padding: 15% 5% 1% 5%;
+    }
+    .imagem__mode {
+        width: 5vh;
+        height: 5vh;
+    }
+    .conteudo__criptografar {
+        padding-bottom: 2%;
+        width: auto;
+    }
+    .caixa__conteudo__pronto {
+        margin: 5% 0%;
+        width: auto;
+    }
+    .caixa__conteudo {
+        padding: 2% 0%;
+        height: auto;
+    }
+    .conteudo__pronto {
+        background-image: none;
+    }
+    .aviso__texto {
+        font-size: 1rem;
+    }
+    .caixa__conteudo__titulo {
+        font-size: 2rem ;
+    }
+    .caixa__conteudo__paragrafo {
+        font-size: 1.2rem;
+    }
+    .botoes{
+        padding: 2%;
+        width: 65%;
+        justify-content: space-evenly;
+    }
+    .botao__criptografar{
+        font-size: 1rem;
+    }
+    .botao__descriptografar{
+        font-size: 1rem;
+    }
+    .botao__copiar {
+        margin: 2%;
+    }
+}
+
+.hidden {
+    display: none;
+}
