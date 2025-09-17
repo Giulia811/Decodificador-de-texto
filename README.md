@@ -33,13 +33,13 @@ Antes de começar, você só precisa de:
 
 ---
 
-## 🚀 Como Executar
+ ## 🚀 Como Executar
+
 1. Clone este repositório:
 
    ```bash
    git clone https://github.com/Giulia811/Decodificador-de-texto.git
    cd Decodificador-de-texto
-```
 
 2. Abra o arquivo `index.html` no navegador.
 
