@@ -34,14 +34,12 @@ Antes de começar, você só precisa de:
 ---
 
 ## 🚀 Como Executar
-
-````markdown
 1. Clone este repositório:
 
    ```bash
    git clone https://github.com/Giulia811/Decodificador-de-texto.git
    cd Decodificador-de-texto
-````
+```
 
 2. Abra o arquivo `index.html` no navegador.
 
@@ -75,10 +73,4 @@ Decodificador-de-texto
 **Giulia811**
 🔗 [GitHub](https://github.com/Giulia811)
 
-```
-
-Quer que eu já coloque esse README completo pronto pra você (com cabeçalho, badges e licença MIT), e te devolva o arquivo inteiro pronto para colar no `README.md`? ✅
-::contentReference[oaicite:0]{index=0}
-```
-efere deixar sem licença por enquanto?
 ```
