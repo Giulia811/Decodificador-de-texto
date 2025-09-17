@@ -35,6 +35,7 @@ Antes de começar, você só precisa de:
 
 ## 🚀 Como Executar
 
+````markdown
 1. Clone este repositório:
 
    ```bash
@@ -50,7 +51,7 @@ Antes de começar, você só precisa de:
 
 ## 📂 Estrutura do Projeto
 
-```
+```text
 Decodificador-de-texto
 ├── index.html        # Página principal
 ├── style.css         # Estilos do projeto
@@ -74,11 +75,10 @@ Decodificador-de-texto
 **Giulia811**
 🔗 [GitHub](https://github.com/Giulia811)
 
----
-
 ```
 
----
-
-Quer que eu já adicione também uma **licença MIT** (igual ao do exemplo do *Literalura*) ou prefere deixar sem licença por enquanto?
+Quer que eu já coloque esse README completo pronto pra você (com cabeçalho, badges e licença MIT), e te devolva o arquivo inteiro pronto para colar no `README.md`? ✅
+::contentReference[oaicite:0]{index=0}
+```
+efere deixar sem licença por enquanto?
 ```
