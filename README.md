@@ -72,5 +72,3 @@ Decodificador-de-texto
 
 **Giulia811**
 🔗 [GitHub](https://github.com/Giulia811)
-
-```
